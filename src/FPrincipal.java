@@ -45,6 +45,7 @@ public class FPrincipal extends javax.swing.JFrame {
         TQuery = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Kindergarden CRUD");
 
         jToolBar1.setRollover(true);
 
@@ -89,6 +90,9 @@ public class FPrincipal extends javax.swing.JFrame {
         BBitacora.addActionListener(this::BBitacoraActionPerformed);
         jToolBar1.add(BBitacora);
 
+        BNuevo.setBackground(new java.awt.Color(153, 0, 255));
+        BNuevo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        BNuevo.setForeground(new java.awt.Color(255, 255, 255));
         BNuevo.setText("NUEVO");
         BNuevo.setFocusable(false);
         BNuevo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -96,6 +100,8 @@ public class FPrincipal extends javax.swing.JFrame {
         BNuevo.addActionListener(this::BNuevoActionPerformed);
         jToolBar1.add(BNuevo);
 
+        BEditar.setBackground(new java.awt.Color(204, 204, 204));
+        BEditar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         BEditar.setText("EDITAR");
         BEditar.setFocusable(false);
         BEditar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
